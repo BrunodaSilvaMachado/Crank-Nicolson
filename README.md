@@ -25,7 +25,7 @@ Onde lambda é o número de Courant-Friedrichs-Lewy definimos o critério de est
 
 Na análise numérica, o método de Crank-Nicolson é usado para resolver numericamente a equação do calor e equações diferenciais parciais similares. Utilizando-se das diferenças centradas no espaço, e a regra trapezoidal no tempo, o método é de segunda ordem no espaço e implícito no tempo. Numericamente estável e frequentemente aplicado a problemas de difusão.
 
-![5](img/Crank_NIcolson_implicito.jpg)
+![5](img/Crank_Nicolson_implicito.jpg)
 
 ### Resultados
 
@@ -34,13 +34,17 @@ Com os métodos de Euler explícito e Crank-Nicolson implícito, equações (3) 
 Antes de utilizar o método de Euler para solucionar a equação de calor 1D o domínio foi discretizado em *N = 100* partes que formaram a malha computacional.
 
 #### Solução método de Euler
-![Variação do resíduo em cada iteração para *\lambda \leq 1/2*. Observe que nessas condições o critério de estabilidade é atendido portanto o método de Euler explícito converge](img/convergencia/metodoEulerD05_01.png)
+![](img/convergencia/metodoEulerD05_01.png)
+Variação do resíduo em cada iteração para *\lambda \leq 1/2*. Observe que nessas condições o critério de estabilidade é atendido portanto o método de Euler explícito converge
 
-![Variação do resíduo em cada iteração para $\lambda > 1/2$. Observe que nessas condições o método de Euler explícito diverge, pois o critério de estabilidade não é atendido.](img/convergencia/metodoEulerU05_01.png)
+![](img/convergencia/metodoEulerU05_01.png)
+Variação do resíduo em cada iteração para $\lambda > 1/2$. Observe que nessas condições o método de Euler explícito diverge, pois o critério de estabilidade não é atendido.
 
 
 #### Solução método de Crank-Nicolson
 
-![img/convergencia/crank_nicolsonD05_01](Variação do resíduo a cada passo de iteração para *\lambda \leq 1/2*. Observe que a curva do erro é monótona e decrescente.)
+![](img/convergencia/crank_nicolsonD05_01.png)
+Variação do resíduo a cada passo de iteração para *\lambda \leq 1/2*. Observe que a curva do erro é monótona e decrescente.
 
-![img/convergencia/crank_nicolsonU05_01](Variação do resíduo a cada passo de iteração para *\lambda > 1/2*. Observe que o critério de estabilidade foi atendido.)
+![](img/convergencia/crank_nicolsonU05_01.png)
+Variação do resíduo a cada passo de iteração para *\lambda > 1/2*. Observe que o critério de estabilidade foi atendido.
